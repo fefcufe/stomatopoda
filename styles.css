@@ -43,7 +43,7 @@ li {
     margin: 100px;
 }
 
-ul {
+#nav-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -54,6 +54,31 @@ nav {
     height: 50px;
     line-height: 50px;
     text-align: center;
+}
+
+aside {
+    position:fixed; /* mantém aside fixo e visível na página mesmo ao rolar a página */ 
+    margin: 1% 1% 1%;
+    padding: 0% 2% 1% 0;
+    line-height: 300%; /* define altura de cada linha dentro do elemento. 
+                        Se for setada = à altura do elemento, centraliza o texto na vertical. */
+    background-color: lightsteelblue;
+    border: 1px solid rgb(243, 238, 238);
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li a {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    
+}
+
+aside ul li a:hover {
+    border-bottom: 3px solid #fffffff6;
 }
 
 article {
@@ -93,6 +118,4 @@ img {
     padding: 20px;  
     margin: 4% 0;
     border-radius: 10px;
-
-
 }
