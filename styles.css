@@ -38,7 +38,7 @@ a {
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
-li {
+#nav-bar li {
     display: inline;
     margin: 100px;
 }
@@ -58,27 +58,33 @@ nav {
 
 aside {
     position:fixed; /* mantém aside fixo e visível na página mesmo ao rolar a página */ 
+    width: 80px;
+    height: 45vh; /* 100% da altura da viewport */;
     margin: 1% 1% 1%;
-    padding: 0% 2% 1% 0;
-    line-height: 300%; /* define altura de cada linha dentro do elemento. 
-                        Se for setada = à altura do elemento, centraliza o texto na vertical. */
-    background-color: lightsteelblue;
     border: 1px solid rgb(243, 238, 238);
-}
+    box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+    background-color: whitesmoke;
+    
+}   
 
 aside ul {
     list-style-type: none;
+    margin:0;
+    padding-left: 5px;
 }
 
 aside ul li a {
-    font-size: 18px;
+    font-size: 12px;
     font-family: "Open Sans", sans-serif;
     display: inline-block;
+    padding: 10px 0;
+    color:black;
+    transition: border-bottom 0.2s; 
     
 }
 
 aside ul li a:hover {
-    border-bottom: 3px solid #fffffff6;
+    border-bottom: 3px solid darkblue;
 }
 
 article {
